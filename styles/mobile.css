@@ -1,0 +1,46 @@
+
+
+@media screen and (max-width: 630px) {
+
+    header {
+        background: url('../images/young-hispanic-woman-pharmacist-smiling-confident-standing-with-arms-crossed-gesture-pharmacy.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    /* MENU HAMBURGUER */
+    header nav#nav_esquerda{
+        justify-content: space-between;
+    }
+    header nav#nav_esquerda ul#icone_menu{
+        display: flex;
+    }
+
+    header nav#nav_esquerda ul#icone_menu li#menuX{
+        display: none;
+    }
+
+    /* MENU */
+    header nav#nav_esquerda ul.menu_principal{
+        flex-direction: column;
+        width: 20%;
+        height: 85vh;
+        padding-top: .5rem;
+        position: absolute;
+        top: 9.3rem;
+        right: 0;
+        z-index: 999;
+        border-radius: 10px;
+        display:none ;
+    }
+
+    header nav#nav_esquerda ul.menu_principal li {
+        margin: .5rem;
+        margin-left: 1rem;
+        background-color: rgba(0, 0, 0, 0.8); 
+        border-radius: 5px; 
+    }
+
+    header nav#nav_esquerda ul.menu_principal li a {
+        font-size: 130%;
+    }
+}
