@@ -22,8 +22,8 @@
     /* MENU */
     header nav#nav_esquerda ul.menu_principal{
         flex-direction: column;
-        width: 30%;
-        height: 30vh;
+        width: 50%;
+        height: 40vh;
         padding-top: .5rem;
         position: absolute;
         top: 9.3rem;
@@ -35,7 +35,7 @@
     }
 
     header nav#nav_esquerda ul.menu_principal li {
-        margin: .5rem;
+        margin: 0.5rem;
         margin-left: 1rem;
         background-color: rgba(0, 0, 0, 0.8); 
         border-radius: 10px;

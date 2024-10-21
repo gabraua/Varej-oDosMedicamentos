@@ -1,11 +1,12 @@
 /* Cores Personalizadas */
 :root {
-    --cor-primaria: #91F2E9;
+    --cor-primaria: #0c0c64;
     --cor-secundaria: #223059;
     --cor-terciaria: #415AA6;
     --cor-quarta: #354B8C;
     --cor-quinta: #F21667;
 }
+
 
 /* Padronizar os textos */
 * {
@@ -39,7 +40,7 @@ header {
 header nav#nav_esquerda {
     width: 100%;
     height: 150px;
-    background-color: var(--cor-secundaria);
+    background-color: #0c0c64;
     display: flex;
     align-items: center;
 }
@@ -109,4 +110,8 @@ section.menuhome{
 section.menuhome div.container h2 {
     font-size: max(22px, 1.9vw);
     margin-top: 10px;
+}
+
+section.contato{
+    background-color: #415AA6;
 }
