@@ -1,101 +1,112 @@
-/* 
-#91F2E9
-#223059
-#415AA6
-#354B8C
-#F21667  
-*/
+/* Cores Personalizadas */
+:root {
+    --cor-primaria: #91F2E9;
+    --cor-secundaria: #223059;
+    --cor-terciaria: #415AA6;
+    --cor-quarta: #354B8C;
+    --cor-quinta: #F21667;
+}
+
 /* Padronizar os textos */
-*{
-    padding: 0%;
-    margin: 0%;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-h1{
-    
+
+h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-shadow: 4px 4px 6px #000;
-    font-weight:900; 
-    font-size: max(44px,5.2vw);
+    font-weight: 900; 
+    font-size: max(44px, 5.2vw);
 }
 
-h2{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-shadow: 4px 4px 6px #464646;
     font-weight: 700;
-    font-size: max(20px,2.8vw);
+    font-size: max(20px, 2.8vw);
 }
 
-/* Header */
-/* Header */
-/* Header */
-header{
+/* Estilos do Header */
+header {
     max-width: 100%;
     height: 95vh;
-    background: url('../images/young-hispanic-woman-pharmacist-smiling-confident-standing-with-arms-crossed-gesture-pharmacy.jpg');
-
+    background: url('../images/header.jpg') no-repeat center center/cover;
 }
-/* navbar */
-header nav#nav_esquerda{
+
+/* Navbar */
+header nav#nav_esquerda {
     width: 100%;
     height: 150px;
-    background-color:#223059;
-
+    background-color: var(--cor-secundaria);
     display: flex;
-    flex-flow: row;
     align-items: center;
-
-    /* justify-content: space-between; */
 }
 
-header nav#nav_esquerda div#logo{
-    max-width: 100px;
-    max-height: 120px;
+/* Logo */
+header nav#nav_esquerda div#logo {
+    max-width: 200px;
+    max-height: 240px;
     margin-left: 5rem;
 }
 
-header nav#nav_esquerda div#logo img{
+header nav#nav_esquerda div#logo img {
     max-width: 100%;
     max-height: 100%;
-
-}
-/* menu hamburguer */
-header nav#nav_esquerda ul#icone_menu{
-   display: none;
 }
 
-header nav#nav_esquerda ul#icone_menu li{
-   list-style: none;
+/* Menu Hamburger */
+header nav#nav_esquerda ul#icone_menu {
+    display: none; /* Oculte o menu padrão */
 }
 
-header nav#nav_esquerda ul#icone_menu li ion-icon{
-   font-size: 80px;
-   color: black;
-   margin-right: 2rem;
+header nav#nav_esquerda ul#icone_menu li {
+    list-style: none;
 }
-/* menu */
 
-header nav#nav_esquerda ul.menu_principal{
-    margin-left: 0rem;
+header nav#nav_esquerda ul#icone_menu li ion-icon {
+    font-size: 80px;
+    color: black;
+    margin-right: 2rem;
+}
 
+/* Menu Principal */
+header nav#nav_esquerda ul.menu_principal {
+    margin-left: 2rem;
     display: flex;
     flex-flow: row wrap;
 }
 
-header nav#nav_esquerda ul.menu_principal li{
+header nav#nav_esquerda ul.menu_principal li {
     list-style: none;
     margin-right: 2rem;
 }
 
-header nav#nav_esquerda ul.menu_principal li a{
+header nav#nav_esquerda ul.menu_principal li a {
     text-decoration: none;
     color: aliceblue;
     font-size: 200%;
     text-shadow: 4px 6px 10px #000;
     padding-bottom: 10px;
+    transition: opacity 0.3s, border-bottom 0.3s; /* Adiciona transições suaves */
 }
 
-header nav#nav_esquerda ul.menu_principal li a:hover{
-    opacity: .6;
+header nav#nav_esquerda ul.menu_principal li a:hover {
+    opacity: 0.6;
     border-bottom: 1px solid #fff;
+}
+
+/* MENU HOME */
+section.menuhome{
+    max-width: 100%;
+    padding: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section.menuhome div.container h2 {
+    font-size: max(22px, 1.9vw);
+    margin-top: 10px;
 }

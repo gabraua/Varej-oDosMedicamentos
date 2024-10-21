@@ -1,4 +1,3 @@
-
 function mostrarMenu() {
     $('header nav#nav_esquerda ul.menu_principal').css('display', 'flex');
     $('header nav#nav_esquerda ul#icone_menu li#menu').css('display', 'none');

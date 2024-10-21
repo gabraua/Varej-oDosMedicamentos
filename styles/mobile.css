@@ -3,7 +3,7 @@
 @media screen and (max-width: 630px) {
 
     header {
-        background: url('../images/young-hispanic-woman-pharmacist-smiling-confident-standing-with-arms-crossed-gesture-pharmacy.jpg') no-repeat center center;
+        background: url('../images/header.jpg') no-repeat center center;
         background-size: cover;
     }
 
@@ -22,8 +22,8 @@
     /* MENU */
     header nav#nav_esquerda ul.menu_principal{
         flex-direction: column;
-        width: 20%;
-        height: 85vh;
+        width: 30%;
+        height: 30vh;
         padding-top: .5rem;
         position: absolute;
         top: 9.3rem;
@@ -31,16 +31,18 @@
         z-index: 999;
         border-radius: 10px;
         display:none ;
+        transition: height 5s ease, padding-top 0.5s ease; /* Animação suave */
     }
 
     header nav#nav_esquerda ul.menu_principal li {
         margin: .5rem;
         margin-left: 1rem;
         background-color: rgba(0, 0, 0, 0.8); 
-        border-radius: 5px; 
+        border-radius: 10px;
+        transition: background-color 3s ease; /* Animação de hover suave */ 
     }
 
     header nav#nav_esquerda ul.menu_principal li a {
-        font-size: 130%;
+        font-size: 150%;
     }
 }
