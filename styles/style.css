@@ -18,7 +18,7 @@
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-shadow: 4px 4px 6px #000;
-    font-weight: 900; 
+    font-weight: 900;
     font-size: max(44px, 5.2vw);
 }
 
@@ -59,7 +59,8 @@ header nav#nav_esquerda div#logo img {
 
 /* Menu Hamburger */
 header nav#nav_esquerda ul#icone_menu {
-    display: none; /* Oculte o menu padrão */
+    display: none;
+    /* Oculte o menu padrão */
 }
 
 header nav#nav_esquerda ul#icone_menu li {
@@ -90,7 +91,8 @@ header nav#nav_esquerda ul.menu_principal li a {
     font-size: 200%;
     text-shadow: 4px 6px 10px #000;
     padding-bottom: 10px;
-    transition: opacity 0.3s, border-bottom 0.3s; /* Adiciona transições suaves */
+    transition: opacity 0.3s, border-bottom 0.3s;
+    /* Adiciona transições suaves */
 }
 
 header nav#nav_esquerda ul.menu_principal li a:hover {
@@ -99,7 +101,7 @@ header nav#nav_esquerda ul.menu_principal li a:hover {
 }
 
 /* MENU HOME */
-section.menuhome{
+section.menuhome {
     max-width: 100%;
     padding: 60px;
     padding-bottom: 60px;
@@ -112,6 +114,85 @@ section.menuhome div.container h2 {
     margin-top: 10px;
 }
 
-section.contato{
+section.contato {
     background-color: #415AA6;
+}
+
+/*FOOTER */
+footer {
+    background-color: #0c0c64;
+    /* Fundo claro para contraste */
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-top: 2px solid #dee2e6;
+
+}
+
+#logo-footer img {
+    width: 200px;
+    /* Ajuste do tamanho da logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contato-footer {
+    text-align: center;
+}
+
+#contato-footer a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+    transition: 0.8s;
+}
+
+#contato-footer a:hover {
+    color: #0056b3;
+}
+
+#contato-footer svg {
+    width: 24px;
+    /* Ajuste da largura */
+    height: 24px;
+    /* Ajuste da altura */
+}
+
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    margin: 5px 0;
+}
+
+.footer-list h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ebeef1;
+}
+
+.footer-link {
+    color: #ebeef1;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #007bff;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6c757d;
 }
