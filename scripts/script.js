@@ -12,18 +12,18 @@ function esconderMenu() {
 
 let controle = true;
 
-$('header nav#nav_esquerda ul#icone_menu li#menu').click(function() {
+$('header nav#nav_esquerda ul#icone_menu li#menu').click(function () {
     if (controle == true) {
         mostrarMenu();
-        controle = false; 
+        controle = false;
     } else {
         esconderMenu();
-        controle = true; 
+        controle = true;
     }
 });
 
 // Adicionando evento de clique para o menuX também
-$('header nav#nav_esquerda ul#icone_menu li#menuX').click(function() {
+$('header nav#nav_esquerda ul#icone_menu li#menuX').click(function () {
     esconderMenu();
     controle = true;
 });

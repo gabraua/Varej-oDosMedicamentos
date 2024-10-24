@@ -16,18 +16,20 @@
 }
 
 h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 4px 4px 6px #000;
+    font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: max(44px, 5.2vw);
+    color: #2d3748; /* Cor escura neutra, como um tom de cinza escuro */
 }
 
 h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 4px 4px 6px #464646;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: max(20px, 2.8vw);
+    color: #4a5568; /* Um cinza mais claro para diferenciar do h1 */
 }
+
+
 
 /* Estilos do Header */
 header {
@@ -69,7 +71,7 @@ header nav#nav_esquerda ul#icone_menu li {
 
 header nav#nav_esquerda ul#icone_menu li ion-icon {
     font-size: 80px;
-    color: black;
+    color: rgb(255, 255, 255);
     margin-right: 2rem;
 }
 
@@ -103,8 +105,8 @@ header nav#nav_esquerda ul.menu_principal li a:hover {
 /* MENU HOME */
 section.menuhome {
     max-width: 100%;
-    padding: 60px;
-    padding-bottom: 60px;
+    padding: 40px;
+    padding-bottom: 40px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -113,10 +115,17 @@ section.menuhome div.container h2 {
     font-size: max(22px, 1.9vw);
     margin-top: 10px;
 }
-
-section.contato {
-    background-color: #415AA6;
+/* ABOUT US*/
+section.aboutus div{
+    background-color:#0c0c64;
 }
+
+
+section.aboutus p{
+    color: #dee2e6;
+}
+
+
 
 /*FOOTER */
 footer {
@@ -149,7 +158,7 @@ footer {
 
 #contato-footer a {
     display: inline-block;
-    margin: 0 10px;
+    margin: 10 10px;
     color: #007bff;
     text-decoration: none;
     transition: 0.8s;
@@ -164,6 +173,7 @@ footer {
     /* Ajuste da largura */
     height: 24px;
     /* Ajuste da altura */
+    display: flex;
 }
 
 
@@ -171,13 +181,15 @@ footer {
     list-style: none;
     padding: 0;
 }
-
-.footer-list li {
-    margin: 5px 0;
+#contato-footer {
+  flex: 1;
+  text-align: center;
+  color: #dee2e6;
 }
 
+
 .footer-list h3 {
-    font-size: 24px;
+    font-size: 12px;
     margin-bottom: 10px;
     color: #ebeef1;
 }
@@ -196,3 +208,8 @@ p {
     font-size: 14px;
     color: #6c757d;
 }
+
+ul li {
+    margin-bottom: 20px; /* Aumenta a distância entre os itens */
+  }
+  

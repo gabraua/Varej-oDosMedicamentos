@@ -18,6 +18,7 @@
         display: none;
     }
 
+
     /* MENU */
     header nav#nav_esquerda ul.menu_principal {
         flex-direction: column;
@@ -37,9 +38,9 @@
     header nav#nav_esquerda ul.menu_principal li {
         margin: 0.5rem;
         margin-left: 1rem;
-        background-color: rgba(0, 0, 0, 0.8);
+        
         border-radius: 10px;
-        transition: background-color 3s ease;
+        transition: background-color 5s ease;
         /* Animação de hover suave */
     }
 
@@ -48,8 +49,25 @@
     }
 
     /* FOOTER */
-    #footer-content{
-        grid-template-columns: repeat(2, 1fr);
-        
+    #footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo-footer img {
+        width: 150px; /* Reduzir a logo em telas menores */
+    }
+
+    #contato-footer a {
+        display: block;
+        margin: 10px 0; /* Adicionar espaçamento entre os links */
+    }
+
+    .footer-list h3 {
+        font-size: 20px; /* Ajustar tamanho das fontes */
+    }
+
+    .footer-link {
+        font-size: 18px; /* Reduzir o tamanho da fonte dos links */
     }
 }
